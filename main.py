@@ -20,5 +20,6 @@ str="\r영수증NO : {}\n\r사업자번호 : 1205000430\n\r주소 : 인천시 �
 ARD.write(str.encode("EUC-KR"))  # Q12345678 전송
 # print(A)
 print(str.encode("EUC-KR"))
+ARD.closed()
 # print(datetime.datetime.now().strftime("%f"))
 # print(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
