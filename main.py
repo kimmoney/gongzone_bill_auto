@@ -9,7 +9,7 @@ BaudRate = 9600
 
 ARD= serial.Serial(PORT,BaudRate)
 
-str="\r영수증NO : {}\n\r사업자번호 : 1205000430\n\r주소 : 인천시 부평구 마장로 49\n\r성명 : 장수연\n\r전화 : 032-521-5777\n\r일자 : {}\n\r \n\r\x1b!\x00------------------------------------------\n\r\n\r\소계 :          50,000\n\r\x1b!\x00------------------------------------------\n\r현금 :          50,000\n\r\x1b!\x00------------------------------------------\n\r\n\r\n\r\n\r\n\r\n\r".format(datetime.datetime.now().strftime("%f"),datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+str="\r영수증NO : {}\n\r사업자번호 : 1205000430\n\r주소 : 인천시 부평구 마장로 49\n\r성명 : 장수연\n\r전화 : 032-521-5777\n\r일자 : {}\n\r \n\r\x1b!\x00------------------------------------------\n\r\n\r소계 :          50,000\n\r\x1b!\x00------------------------------------------\n\r현금 :          50,000\n\r\x1b!\x00------------------------------------------\n\r-\n\r-\n\r-\n\r-\n\r-\n\r-".format(datetime.datetime.now().strftime("%f"),datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
 
 # B=str(B)
 # Trans="Q" + A + B
